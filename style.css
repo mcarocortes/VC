@@ -50,10 +50,59 @@ body{
 /*===================
 	Start Header CSS 
 =====================*/
-.header{
-	background:rgb(230,222,199); 
-	
 
+/* Topbar */
+.header .topbar{
+	background-color:rgb(230,222,199);
+	border-bottom:1px solid rgba(90, 116, 104, 0.126);
+}
+.header .topbar{
+	padding:9px 0;
+}
+.header .top-link{
+	float:left;
+}
+.header .top-link li{
+	display:inline-block;
+	margin-right:15px;
+}
+.header .top-link li:last-child{
+	margin-right:0px;
+}
+.header .top-link li a{
+	color:rgb(31,70,75);
+	font-size:14px;
+	font-weight:400;
+}
+.header .top-link li:hover a{
+	color:rgb(209,162,70);
+}
+.header .top-contact{
+	float:right;
+}
+.header .top-contact li{
+	display:inline-block;
+	margin-right:25px;
+	color:rgb(31,70,75);
+}
+.header .top-contact li:last-child{
+	margin-right:0;
+}
+.header .top-contact li a{
+	font-size:14px;
+}
+.header .top-contact li a:hover{
+	color:rgb(209,162,70);
+}
+.header .top-contact li i{
+	color:rgb(209,162,70);
+	margin-right:8px;
+}
+
+
+
+.header{
+	background:rgb(230,222,199); 	
 }
 .header .navbar-collapse{
 	padding:0;
@@ -327,10 +376,11 @@ background-color: transparent !important;
 /*=============================
 	PREVIO Schedule CSS
 ===============================*/
-.Feautes2 h6{
+.Feautes2 h6, .why-choose h6, .services h6{
 	color:rgb(209,162,70);
 }
-.Feautes2 h1{
+
+.Feautes2 h1, .why-choose h1, .services h1{
 	color:rgb(230,222,199); 
 	font-family: 'BentonSemi';
 	margin-top: 10px;
@@ -348,6 +398,8 @@ background-color: transparent !important;
 	margin: 0;
 	padding: 0;
 	height: 230px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 }
 .schedule .schedule-inner {
 	position: relative;
@@ -417,8 +469,7 @@ background-color: transparent !important;
 	color: rgb(31,70,75);
 }
 .schedule .single-schedule h4{
-	font-size: 30px;
-	font-weight:600;
+	font-size: 25px;
 	display:inline-block;
 	text-transform:capitalize;
 	color: rgb(31,70,75);;
@@ -554,10 +605,11 @@ background-color: transparent !important;
 	Start Fun Facts CSS
 =========================*/
 .fun-facts{
+	margin-top: -50px;
 	position:relative;
 }
 .fun-facts.section{
-	padding:120px 0;
+	padding:80px 0;
 }
 .fun-facts{
 	background:url('img/fun-bg.jpg');
@@ -589,7 +641,7 @@ background-color: transparent !important;
 	border-radius: 50%;
 }
 .fun-facts .single-fun:hover i{
-	color:#1A76D1;
+	color:rgb(209,162,70);
 	background:#fff;
 	border-color:transparent;
 }
@@ -619,6 +671,54 @@ background-color: transparent !important;
 /*===================
 	Why choose CSS
 =====================*/
+
+.why-choose{
+	margin-top: -90px;
+}
+
+.why-choose #selfie{
+	position: absolute;
+	height: 120%;
+	object-fit: cover;  
+	object-position: bottom;
+	margin-bottom: -50px;
+}
+
+
+.why-choose #items{
+	background: white; min-height: 70px; border-radius: 5px; padding: 15px;
+}
+
+.why-choose #items:hover{
+	-webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+	box-shadow: 0px 5px 10px rgba(209, 163, 70, 0.192)}
+
+.why-choose #items #logo{
+	font-size: 30px; color:rgb(209,162,70)
+}
+
+.why-choose h8{
+	color: rgb(31,70,75);
+}
+
+.why-choose h5{
+	color: rgb(31,70,75);
+	font-family: 'BentonSemi';
+	font-size: 30px;
+}
+
+.why-choose h5:hover{
+	color:rgb(209,162,70);
+}
+
+.why-choose h1{
+	color:rgb(31,70,75); 
+	font-family: 'BentonSemi';
+}
 .why-choose .choose-left h3{
 	font-size:24px;
 	font-weight:600;
@@ -627,7 +727,7 @@ background-color: transparent !important;
 	padding-bottom:20px;
 	margin-bottom:24px;
 }
-.why-choose .choose-left h3:before{
+/*.why-choose .choose-left h3:before{
 	position:absolute;
 	content:"";
 	left:0;
@@ -635,13 +735,14 @@ background-color: transparent !important;
 	height:2px;
 	width:50px;
 	background:#1a76d1;
-}
+}*/
 .why-choose .choose-left p{
 	margin-bottom:35px;
+	
 }
 .why-choose .choose-left .list{}
 .why-choose .choose-left .list li {
-	color: #868686;
+	color: rgb(31,70,75);
 	margin-bottom: 12px;
 }
 .why-choose .choose-left .list li:last-child{
@@ -652,7 +753,7 @@ background-color: transparent !important;
 	width:15px;
 	line-height:15px;
 	text-align:center;
-	background:#1a76d1;
+	background:rgb(31,70,75);
 	color:#fff;
 	font-size:14px;
 	border-radius:100%;
@@ -660,7 +761,7 @@ background-color: transparent !important;
 	margin-right:16px;
 }
 /* Start Faq CSS */
-.why-choose{
+/*.why-choose{
 	background:#fff;
 }
 .why-choose .choose-right{
@@ -717,7 +818,7 @@ background-color: transparent !important;
 .why-choose .video-image .waves-block .wave-3 {
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
-}
+}*/
 /*=======================
 	End Why choose CSS
 =========================*/
@@ -752,7 +853,7 @@ background-color: transparent !important;
 	margin-right:20px;
 	font-weight:500;
 	border:1px solid #fff;
-	color:#1a76d1;
+	color:rgb(230,222,199); 
 }
 .call-action .content .btn:before{
 	background:#1A76D1;
@@ -789,7 +890,12 @@ background-color: transparent !important;
 	Start Portfolio CSS
 ============================*/
 .portfolio{
-	background:#FDFDFD;
+	height: 20px;
+	background:rgb(230, 222, 199);
+}
+
+.portfolio .row {
+	margin-top: -200px;
 }
 .portfolio .single-pf{
 	position:relative;
@@ -967,6 +1073,11 @@ background-color: transparent !important;
 /*=========================
 	Srart service CSS
 ===========================*/
+
+
+.services h1{
+	color: rgb(31,70,75);
+}
 .services .single-service{
 	margin:30px 0;
 	position:relative;
@@ -974,7 +1085,7 @@ background-color: transparent !important;
 }
 .services .single-service i{
 	font-size:45px;
-	color:#1a76d1;
+	color:rgb(40,119,113);
 	position:absolute;
 	left:0;
 	-webkit-transition:all 0.4s ease;
@@ -985,14 +1096,15 @@ background-color: transparent !important;
 	text-transform:capitalize;
 	margin-bottom:25px;
 	color:#2C2D3F;
+	font-family: 'BentonSemi';
 }
 .services .single-service h4 a{
-	color:#2C2D3F;
-	font-size:20px;
+	color:rgb(31,70,75);
+	font-size:25px;
 	font-weight:600;
 }
 .services .single-service h4 a:hover{
-	color:#1A76D1;
+	color:rgb(40,119,113);
 }
 .services .single-service p{
 	color:#868686;
@@ -2373,18 +2485,24 @@ background-color: transparent !important;
 	Start Appointment CSS
 ============================*/
 .appointment{
-	background:#fff;
+	background:rgb(31,70,75);
 	padding-top:100px;
+	margin-top: -200px;
+}
+
+.appointment h1{
+	color:rgb(230,222,199); 
+	font-family: 'BentonSemi';
 }
 .appointment.single-page {
-	background: #fff;
+	background: rgb(31,70,75);
 	padding-top: 100px 0;
 	padding: 0;
 	padding: 100px 0;
 }
 .appointment.single-page .appointment-inner {
 	padding: 40px;
-	box-shadow: 0px 0px 10px #00000024;
+	box-shadow: 0px 0px 10px rgb(31,70,75);;
 	border-radius: 5px;
 }
 .appointment.single-page .title{}
@@ -2393,7 +2511,10 @@ background-color: transparent !important;
 	display: block;
 	margin-bottom: 10px;
 	font-weight:600;
+
 }
+
+
 .appointment.single-page .title p{}
 .appointment .form{
 	margin-top:30px;
@@ -2402,23 +2523,26 @@ background-color: transparent !important;
 .appointment .form input {
 	width: 100%;
 	height: 50px;
-	border: 1px solid #eee;
+	border: 1px solid rgb(230,222,199); 
 	text-transform: capitalize;
 	padding: 0px 18px;
-	color: #555;
+	color:rgb(230,222,199); 
 	font-size: 14px;
 	font-weight:400;
 	border-radius:0;
 	border-radius: 4px;
+	background-color: transparent;
 }
 .appointment .form textarea{
 	width: 100%;
 	height:200px;
     padding: 18px;
-	border:1px solid #eee;
+	border:1px solid rgb(230,222,199); 
 	text-transform:capitalize;
 	resize:none;
 	border-radius: 4px;
+	background-color: transparent;
+	color: rgb(230,222,199); ;
 }
 .appointment .form-group .nice-select{
 	width: 100%;
@@ -2427,7 +2551,7 @@ background-color: transparent !important;
 	border: 1px solid #eee;
 	text-transform: capitalize;
 	padding: 0px 18px;
-	color: #999;
+	color: red;
 	font-size: 14px;
 	font-weight:400;
 	border-radius: 4px;
@@ -2450,24 +2574,28 @@ background-color: transparent !important;
 }
 .appointment .form-group .list li:hover {
 	color:#fff;
-	background: #1A76D1;
+	background: rgb(230,222,199); 
 }
 .appointment .appointment-image{}
 .appointment.single-page .button .btn{
 	width:100%;
+	
 }
 .appointment .button .btn{
 	font-weight:500;
+	color: rgb(31,70,75);
+	background:rgb(230,222,199); 
+
 }
 .appointment .button .btn:hover{
-	color:#fff;
+	color:rgb(31,70,75);
 }
 .appointment .form p{
 	margin-top: 10px;
 	color:#868686;
 }
 .appointment.single-page .work-hour{
-	background:#1A76D1;
+	background:rgb(230,222,199); 
 	padding: 40px;
 	box-shadow: 0px 0px 10px #00000024;
 	border-radius: 5px;
@@ -2487,7 +2615,7 @@ background-color: transparent !important;
 }
 .appointment.single-page .time-sidual li {
 	display: block;
-	color: #fff;
+	color: red;
 	width: 100%;
 	margin-bottom: 10px;
 }
@@ -3625,7 +3753,7 @@ background-color: transparent !important;
 .footer .footer-top{
 	padding:100px 0px;
 	position:relative;
-	background:#1A76D1;
+	background:rgb(31,70,75);
 }
 .footer .footer-top:before{
 	position:absolute;
@@ -3655,17 +3783,17 @@ background-color: transparent !important;
 	width: 34px;
 	line-height: 34px;
 	text-align: center;
-	border: 1px solid #fff;
+	border: 1px solid rgb(230,222,199);
 	text-align: center;
 	padding: 0;
 	border-radius: 100%;
 	display: block;
-	color:#fff;
+	color:rgb(230,222,199);
 	font-size: 16px;
 }
 .footer .single-footer .social li a:hover{
-	color:#1A76D1;
-	background:#fff;
+	color:rgb(31,70,75);
+	background:rgb(230,222,199);
 	border-color:transparent;
 }
 .footer .single-footer .social li a i{
@@ -3683,7 +3811,7 @@ background-color: transparent !important;
 }
 .footer .single-footer.f-link li a {
 	display: block;
-	color: #fff;
+	color: rgb(230,222,199);
 	text-transform: capitalize;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
@@ -3694,14 +3822,15 @@ background-color: transparent !important;
 	padding-left:8px;
 }
 .footer .single-footer h2{
-	color:#fff;
-	font-size:20px;
+	color:rgba(209, 163, 70);
+	font-size:30px;
 	font-weight:600;
 	text-transform:capitalize;
 	margin-bottom:40px;
 	padding-bottom:20px;
 	text-transform:capitalize;
 	position:relative;
+	font-family: 'BentonSemi';
 }
 .footer .single-footer h2::before{
 	position: absolute;
@@ -3710,7 +3839,7 @@ background-color: transparent !important;
 	bottom: 0px;
 	height: 3px;
 	width: 50px;
-	background: #fff;
+	background: rgba(209, 163, 70);;
 }
 .footer .single-footer .time-sidual{
 	margin-top:15px;
@@ -3720,7 +3849,7 @@ background-color: transparent !important;
 }
 .footer .single-footer .time-sidual li {
 	display: block;
-	color: #fff;
+	color:  rgb(230,222,199);
 	width: 100%;
 	margin-bottom: 5px;
 }
@@ -3733,91 +3862,19 @@ background-color: transparent !important;
 	float: right;
 }
 .footer .single-footer p{
-	color:#fff;
-}
-.footer .single-footer .newsletter-inner{
-	margin-top:20px;
-	position:relative;
-}
-.footer .single-footer .newsletter-inner input {
-	background: transparent;
-	border: 1px solid #fff;
-	height: 50px;
-	line-height: 42px;
-	width: 100%;
-	margin-right: 15px;
-	color: #fff;
-	padding-left: 18px;
-	padding-right: 70px;
-	display: inline-block;
-	float: left;
-	border-radius: 0px;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-	font-weight: 400;
-	border-radius: 5px;
-}
-.footer .single-footer .newsletter-inner input:hover{
-	padding-left: 22px;
-}
-.footer input::-webkit-input-placeholder {
-    opacity: 1;
-    color: #fff !important;
+	color: rgb(230,222,199);
 }
 
-.footer input::-moz-placeholder {
-    opacity: 1;
-    color: #fff !important;
-}
-
-.footer input::-ms-input-placeholder {
-    opacity: 1;
-    color: #fff !important;
-}
-.footer input::input-placeholder {
-    opacity: 1;
-    color: #fff !important;
-}
-.footer .single-footer .newsletter-inner .button {
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 50px;
-	line-height: 50px;
-	width: 50px;
-	background: #fff;
-	border-left: 1px solid #fff;
-	text-shadow: none;
-	box-shadow: none;
-	display: inline-block;
-	border-radius: 0px;
-	border: none;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-	border-radius: 0 5px 5px 0;
-	color: #1A76D1;
-	font-size: 25px;
-}
-.footer .single-footer .newsletter-inner .button i{
-	-webkit-transition:all 0.4s ease;
-	-moz-transition:all 0.4s ease;
-	transition:all 0.4s ease;
-}
-.footer .single-footer .newsletter-inner .button:hover i{
-	color:#2C2D3F;
-}
 .footer .copyright{
-	background:#1A76D1;
-	padding:25px 0px 25px 0px;
+	background:rgb(31,70,75);
+	padding:10px 0px 25px 0px;
 	text-align:center;
 }
 .footer .copyright .copyright-content p{
-	color:#fff;
+	color: rgb(230,222,199);
 }
 .footer .copyright .copyright-content p a{
-	color:#fff;
+	color: rgb(230,222,199);
 	font-weight:400;
 	text-decoration:underline;
 	display:inline-block;
