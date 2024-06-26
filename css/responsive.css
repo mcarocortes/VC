@@ -1,3 +1,11 @@
+/* MAS QUE TABLET */
+@media only screen and (min-width: 991px) and (max-width: 1167px) {
+	.appointment{
+		margin-top:0px;
+	}
+
+}
+
 /* Tablet Screen */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
@@ -243,6 +251,10 @@
 }
 .appointment .appointment-image{
 	margin-top:20px;
+}
+
+.appointment{
+	margin-top: 0px;
 }
 .call-action .content {
 	padding: 0;
