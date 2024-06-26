@@ -911,7 +911,7 @@ background-color: transparent !important;
 	top:0;
 	height:100%;
 	width:100%;
-	background:#1a76d1;
+	background:rgba(31, 70, 75, 0.632);
 	opacity:0;
 	visibility:hidden;
 	-webkit-transition:all 0.4s ease;
@@ -924,7 +924,7 @@ background-color: transparent !important;
 	visibility:visible;
 }
 .portfolio .single-pf .btn {
-	color: #1a76d1;
+	color: rgb(31,70,75);
 	z-index: 3;
 	background: #fff;
 	position: absolute;
