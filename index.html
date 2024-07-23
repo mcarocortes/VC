@@ -14,7 +14,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Nice Select CSS -->
 		<link rel="stylesheet" href="css/nice-select.css">
 		<!-- Font Awesome CSS -->
@@ -69,7 +69,7 @@
 						<div class="col-lg-8 col-md-7 col-12">
 							<!-- Top Contact -->
 							<ul class="top-contact">
-								<li><i class="icofont-location-pin"></i>Santiago, Chile </li>
+								<li><i class="icofont-location-pin"></i>Avenida Providencia #2330, Oficina 21. Providencia. Santiago</li>
 								<li><i class="fa fa-phone"></i>+56 9 77468657</li>
 								<li><i class="fa fa-envelope "></i><a href="mailto:support@yourmail.com">ps.valezka@gmail.com</a></li>
 							</ul>
@@ -115,8 +115,26 @@
 								<!--/ End Main Menu -->
 							</div>
 							<div class="col-lg-2 col-12">
-								<div class="get-quote">
-									<a href="appointment.html" class="btn">Reservar Cita</a>
+								<div class="get-quote"><!-- Google Calendar Appointment Scheduling begin -->
+									<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+									<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3qmjtefVbX1MVgH__MGQw5EAHfX7D7mrPehRP6D8xcwj9lm5PUzk27J5Pde6Z_72ws9-Q9xgBj?gv=true',
+      color: '#d1a246',
+      label: "Reservar Cita",
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
 								</div>
 							</div>
 						</div>
@@ -137,8 +155,8 @@
 						<div class="row">
 							<div class="col-lg-7 col-md-6 col-6 ml-5">
 								<div class="text">
-									<p>TE AYUDO A CONSTRUIR TU BIENESTAR</p>
-									<h1>Ya has dado el <span>Primer paso</span> entrando <span>aquí</span></h1>
+									<p>BIENVENIDOS A VC</p>
+									<h1><span>Te ayudo </span>a construir tu <span>bienestar</span></h1>
 									<div class="button">
 										<a href="#contacto" class="btn">Consultar</a>
 									</div>
@@ -155,8 +173,8 @@
 						<div class="row">
 							<div class="col-lg-7 col-md-6 col-6 ml-5">
 								<div class="text">
-									<p>CONSULTA PARA MÁS INFORMACIÓN</p>
-									<h1>Atención<span> online y presencial</span></h1>
+									<p>BIENVENIDOS A VC</p>
+									<h1>¡Ánimo, ya has dado el <span>primer paso</span> entrando <span>aquí!</span></h1>
 									<div class="button">
 										<a href="#contacto" class="btn">Consultar</a>
 									</div>
@@ -197,7 +215,7 @@
 								<h6>Bienvenidos a tu web de consultas</h6>
 								<h1 >VC Servicios</h1>
 								<hr>
-								<p>Encuentra todos los servicios que necesites adaptados a tus necesidades</p>
+								<p>Encuentra todos los servicios que necesites adaptados a tus necesidades.<br> <b>Atención online y presencial</b></p>
 							</div>
 						</div>
 					</div>
@@ -215,72 +233,60 @@
 						<div class="col-lg-4 col-md-4 col-12 " >
 							<!-- single-schedule -->
 							<div class="single-schedule" >
-								<div class="inner" style="min-height: 100px;">
-									<div class="icon">
-										<i class="icofont-court-hammer"></i>
-									</div>
-									<div class="single-content">
-										<span>Mediación</span>
-										<h4>Familiar</h4>
-										<p class="d-none d-sm-block">
-											La mediación ayuda a resolver conflictos sin ir a juicio. Previo a un jucio de familia, la ley exige una mediación por pensión de alimentos, visitas y cuidado personal. </p>
-										<a href="#">LEER MÁS<i class="fa fa-long-arrow-right"></i></a>
-									</div>
+							  <div class="inner" style="min-height: 100px;">
+								<div class="icon">
+								  <i class="icofont-court-hammer"></i>
 								</div>
+								<div class="single-content">
+								  <span>Mediación</span>
+								  <h4>Familiar</h4>
+								  <p class="d-none d-sm-block">
+									La mediación ayuda a resolver conflictos sin ir a juicio. Previo a un jucio de familia, la ley exige una mediación por pensión de alimentos, visitas y cuidado personal.
+								  </p>
+								  <a href="#" data-toggle="modal" data-target="#modalMediacion">LEER MÁS<i class="fa fa-long-arrow-right"></i></a>
+								</div>
+							  </div>
 							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-4 col-12 ">
+						  </div>
+						  
+						  <div class="col-lg-4 col-md-4 col-12 ">
 							<!-- single-schedule -->
 							<div class="single-schedule">
-								<div class="inner" style="min-height: 100px;">
-									<div class="icon">
-										<i class="icofont-brain"></i>
-									</div>
-									<div class="single-content">
-										<span>Terapia complementaria</span>
-										<h4>Con Flores de Bach</h4>
-										<p class="d-none d-sm-block">Las enfermedades físicas tienen un origen emocional. Las flores de Bach se utilizan en momentos de ruptura, miedo, soledad, desesperación, estrés, depresión y obsesiones.
-										</p>
-										<a href="#">LEER MÁS<i class="fa fa-long-arrow-right"></i></a>
-									</div>
+							  <div class="inner" style="min-height: 100px;">
+								<div class="icon">
+								  <i class="icofont-brain"></i>
 								</div>
+								<div class="single-content">
+								  <span>Terapia complementaria</span>
+								  <h4>Con Flores de Bach</h4>
+								  <p class="d-none d-sm-block">
+									Las enfermedades físicas tienen un origen emocional. Las flores de Bach se utilizan en momentos de ruptura, miedo, soledad, desesperación, estrés, depresión y obsesiones.
+								  </p>
+								  <a href="#" data-toggle="modal" data-target="#modalFloresBach">LEER MÁS<i class="fa fa-long-arrow-right"></i></a>
+								</div>
+							  </div>
 							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-4 col-12">
+						  </div>
+						  
+						  <div class="col-lg-4 col-md-4 col-12">
 							<!-- single-schedule -->
 							<div class="single-schedule middle">
-								<div class="inner" style="min-height: 100px;">
-									<div class="icon">
-										<i class="icofont-prescription"></i>
-									</div>
-									<div class="single-content">
-										<span>Test </span>
-										<h4>ADOS-2</h4>
-										<p class="d-none d-sm-block">Evaluación estándar para diagnosticar sospechas de trastorno del espectro autista (TEA) en niños y adultos.</p>
-										<a href="#">LEER MÁS<i class="fa fa-long-arrow-right"></i></a>
-									</div>
+							  <div class="inner" style="min-height: 100px;">
+								<div class="icon">
+								  <i class="icofont-prescription"></i>
 								</div>
-							</div>
-						</div>
-
-						<!--<div class="col-lg-3 col-md-6 col-12">
-							single-schedule 
-							<div class="single-schedule middle">
-								<div class="inner" style="min-height: 100px;">
-									<div class="icon">
-										<i class="icofont-unity-hand"></i>
-									</div>
-									<div class="single-content">
-										<span>Charlas</span>
-										<h4>Múltiples</h4>
-										<p class="d-none d-sm-block">Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
-										<a href="#">LEER MÁS<i class="fa fa-long-arrow-right"></i></a>
-									</div>
+								<div class="single-content">
+								  <span>Test </span>
+								  <h4>ADOS-2</h4>
+								  <p class="d-none d-sm-block">
+									Evaluación estándar para diagnosticar sospechas de trastorno del espectro autista (TEA) en niños y adultos.
+								  </p>
+								  <a href="#" data-toggle="modal" data-target="#modalADOS2">LEER MÁS<i class="fa fa-long-arrow-right"></i></a>
 								</div>
+							  </div>
 							</div>
-						</div> -->
+						  </div>
+						  
 
 					</div>
 				</div>
@@ -288,6 +294,113 @@
 		</section>
 		<!--/End Start schedule Area -->
 
+
+
+		<!-- Modal Mediación Familiar -->
+<div class="modal fade" id="modalMediacion" tabindex="-1" role="dialog" aria-labelledby="modalMediacionLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="modalMediacionLabel">Mediación Familiar</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			Antes de iniciar un juicio de familia la ley exige que haya una mediación por tres motivos principales.<br>
+			<br>
+			- Pensión de alimentos (Aumentos/Rebaja/Cese)<br>
+			- Relación directa y regular (visitas)<br>
+			- Cuidado personal<br>
+			<br>
+			<b>• SERVICIO COMPLETO: MEDIACIÓN CON Y SIN ACUERDO</b>
+			<br><b>Incluye:</b><br>
+				1. Notificacion de las partes<br>
+				2. Redacción de documento <br>
+				3. Tramitación ante tribunal correspondiente
+			<br><b>Costo:</b> $120.000<br>
+				<br>
+			
+			
+			<b>• ACTA DE MEDIACIÓN FRUSTRADA</b><br>
+			En caso de que exista denuncia por vif. 
+			<br>Se entrega documento mismo dia.
+			<br><b>Costo:</b> $40.000<br>
+				<br>
+			
+			
+			<b>• MEDIACIÓN FAMILIAR ONLINE:</b> 1 sesión<br>
+			<b>Incluye:</b><br>
+			1. Citación a las partes<br>
+			2. Si no hay acuerdo en esta sesión, se entrega acta de mediación frustrada, sin recargo extra.<br>
+			<b>Costo:</b> $50.000<br>
+				<br>
+					</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn" data-dismiss="modal" style="background-color: rgb(31,70,75); 
+;">Cerrar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Modal Terapia con Flores de Bach -->
+  <div class="modal fade" id="modalFloresBach" tabindex="-1" role="dialog" aria-labelledby="modalFloresBachLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="modalFloresBachLabel">Terapia con Flores de Bach</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			Las enfermedades físicas tienen un origen emocional y  si los conflictos emocionales subsisten por mucho tiempo, la enfermedad del cuerpo empieza a aparecer. (e. Bach)
+			<br>
+			Utilizada para momentos de: ruptura, miedos, soledad, desesperación, estrés, depresión, obsesiones, entre otros.
+			<br><br>
+			
+			<b>• PRIMERA CONSULTA:</b> Incluye 1 frasco<br>
+			<b>Costo:</b> $25.000<br><br>
+			<i>El retiro de cada frasco en las siguientes sesiones tiene un costo de $10.000</i>
+					</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn" data-dismiss="modal" style="background-color: rgb(31,70,75);">Cerrar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Modal Test ADOS-2 -->
+  <div class="modal fade" id="modalADOS2" tabindex="-1" role="dialog" aria-labelledby="modalADOS2Label" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="modalADOS2Label">Test ADOS-2</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			Evaluación estandarizada que se utiliza para ayudar a diagnosticar tanto en niños como adultos alguna sospecha de trastorno del espectro autista (tea).
+			<br><br>
+			
+			<b>• SERVICIO COMPLETO:</b><br>
+			<b>Incluye:</b><br>
+			1. Entrevista Inicial<br>
+			2. Sesión de Evaluación<br>
+			3. Entrega de informe y devolución<br>
+			<b>Costo:</b> $120.000<br><br>
+			
+			<i>Para agendar, se debe realizar el pago anticipado de la mitad del servicio.</i>
+			</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn" data-dismiss="modal" style="background-color: rgb(31,70,75);">Cerrar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
 
 
 	<!-- Start Why choose -->
@@ -576,7 +689,7 @@
                         <div class="col-lg-12 col-md-12 col-12" style="text-align: center;">
                             <h1>Contacto</h1>
                             <hr>							
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p> <br>
+                            <p>Envíanos tus consultas y responderemos a la brevedad. Realizamos atención online y presencial</p> <br>
                         </div>
                         <div class="col-lg-12 col-md-12 col-12">
                             <div class="form-group">
@@ -612,6 +725,7 @@
                         </div>
                     </div>
                 </form>
+				
             </div>
         </div>
     </div>
@@ -689,6 +803,9 @@
 		
 		<!-- jquery Min JS -->
         <script src="js/jquery.min.js"></script>
+		<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<!-- jquery Migrate JS -->
 		<script src="js/jquery-migrate-3.0.0.js"></script>
 		<!-- jquery Ui JS -->

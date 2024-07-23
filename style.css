@@ -47,6 +47,18 @@ body{
 	color: rgb(230,222,199);
 }
 
+
+/*MODAL*/
+
+.modal-header{
+	background-color:rgb(230,222,199);
+	color:rgb(31,70,75);
+}
+.modal-body,.modal-footer{
+	background-color:rgba(230, 222, 199, 0.336);
+	color:rgb(31,70,75);
+}
+
 /*===================
 	Start Header CSS 
 =====================*/
